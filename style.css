@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@300&family=Oswald&display=swap');
+
+/*
+font-family: 'Lobster', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Oswald', sans-serif;
+*/
+
+/* css reset */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+ margin: 0;
+ padding: 0;
+ border: 0;
+ font-size: 100%;
+ font: inherit;
+ vertical-align: baseline;
+ box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+ display: block;
+}
+body {
+ line-height: 1;
+}
+ol, ul {
+ list-style: none;
+}
+blockquote, q {
+ quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+ content: '';
+ content: none;
+}
+table {
+ border-collapse: collapse;
+ border-spacing: 0;
+}
+nav {
+ background: linear-gradient(to bottom, #1A759F, #52B69A);
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ font-weight: 900;
+ padding: 15px 30px;
+ box-shadow: 1px 1px 5px #000;
+}
+
+nav .brand a {
+ text-decoration: none;
+ color: #fff;
+ font-family: 'Lobster', cursive;
+ text-shadow: 1px 1px 5px #303030;
+ font-size: 28px;
+}
+
+nav .links a {
+ text-decoration: none;
+ color: #fff;
+ font-family: 'Oswald', Sans-Serif;
+ letter-spacing: 2px;
+ text-shadow: 1px 1px 5px #303030;
+ font-size: 20px;
+ margin-right: 15px;
+}
+
+section {
+ font-family: 'Montserrat', Sans-Serif;
+ font-size: 18px;
+ font-weight: 600;
+}
+.jumbotron {
+ background: linear-gradient(205deg, #D9ED92, #99d98c);
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+  padding: 60px 0;
+}
+.jumbotron .text {
+ line-height: 25px;
+ border: 1px solid #52B69A;
+ border-radius: 10px;
+ padding: 60px 30px;
+ letter-spacing: 2px;
+ position: relative;
+}
+.jumbotron .text::before {
+ content: '';
+ display: block;
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ top: -20px;
+ left: 15px;
+ border: 1px solid #007459;
+ border-radius: 10px;
+}
+.jumbotron .image {
+ border-radius: 50%;
+ overflow: hidden;
+ box-shadow: 20px -20px 0 #017d9c;
+}
+
+.about {
+ padding: 15px 40px;
+}
+
+.title {
+ width: 40%;
+ padding: 10px;
+ font-size: 24px;
+ text-align: center;
+ border-bottom: 2px solid black;
+ margin: 15px auto 50px;
+ text-transform: uppercase;
+}
+
+.about .list {
+ display: flex;
+ justify-content: space-around;
+}
+.about .list li {
+ margin-bottom: 8px;
+ letter-spacing: 3px;
+}
+
+.portofolio {
+ background: linear-gradient(to bottom, #D9ED92, #99d98c);
+ padding: 15px 30px 60px;
+ max-width: 100vw;
+ margin-bottom: 0;
+}
+.portofolio .card-container {
+ overflow: scroll;
+ max-width: 100%;
+ height: auto;
+ display: flex;
+ flex-wrap: nowrap;
+ justify-content: flex-start;
+ max-width: 100vw;
+ overflow: scroll;
+}
+.portofolio .card-container .card {
+ min-width: 30%;
+ height: 400px;
+ background: #fff;
+ border-radius: 15px;
+ box-shadow: .5px .5px 5px #01a047;
+ margin: 5px 15px;
+ display: flex;
+ flex-direction: column;
+ overflow: hidden;
+ justify-content: flex-start;
+ align-items: center;
+}
+.portofolio .card-container .card img {
+ width: 100%;
+ height: 85%;
+ object-fit: cover;
+ border-bottom: 2px solid #7ca600;
+}
+.portofolio .card-container .card span {
+ padding: 15px;
+}
+.contact {
+ background: linear-gradient(to bottom, #43c4ff, #0186b5);
+ padding: 15px 30px 60px;
+ margin: 0;
+}
+.contact form {
+ width: 100%;
+}
+.contact form .inputs {
+ margin-bottom: 15px;
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+}
+.contact form .inputs label {
+ margin-bottom: 10px;
+ margin-left: 20px;
+ text-transform: uppercase;
+ font-size: 16px;
+}
+.contact form .inputs input,
+.contact form .inputs textarea {
+ border: none;
+ border-radius: 15px;
+ padding: 10px 25px;
+ font-size: 14px;
+ color: #303030;
+}
+.contact form button {
+ border: none;
+ outline: none;
+ border-radius: 5px;
+ padding: 10px 25px;
+ font-size: 18px;
+ color: #000;
+ font-weight: 700;
+ box-shadow: 1px 1px 5px #00bc8f;
+ background-color: #00ff00;
+ float: right;
+}
+footer {
+ font-size: 24px;
+ text-align: center;
+ padding: 20px;
+ font-weight: 900;
+}
